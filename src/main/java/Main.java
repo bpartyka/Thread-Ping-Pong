@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String [] args){
 
-        Ball ball1= new Ball("ping");
-        ball1.addBall();
-        Ball ball2= new Ball("pong");
-        ball2.addBall();
+        Ball ball= new Ball();
+        User user1= new User("ping", ball);
+        User user2= new User("pong",ball);
+        user1.addUser(user1);
+        user2.addUser(user2);
+
     }
 }
